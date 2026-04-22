@@ -11,6 +11,10 @@ def limpiar():
     os.system("clear")
     return ""
 
+def navegador():
+    os.system("firefox &")
+    return "Abriendo navegador"
+
 def main():
     engine = Engine()
 
@@ -18,6 +22,7 @@ def main():
     engine.register_command("saludo", saludo)
     engine.register_command("hora", hora)
     engine.register_command("clear", limpiar)
+    engine.register_command("navegador", navegador)
 
     while True:
         comando = input(">> ").lower()

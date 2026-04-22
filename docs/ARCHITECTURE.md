@@ -18,3 +18,12 @@
 - Move commands from main.py to modules
 - Create command registry
 - Introduce parser layer
+
+## New Component
+
+### Command Registry
+
+Responsible for:
+- Centralizing command registration
+- Decoupling modules from engine
+- Preparing for modular loading

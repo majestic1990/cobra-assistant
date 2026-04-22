@@ -9,4 +9,4 @@ class Engine:
         if command in self.commands:
             return self.commands[command]()
         else:
-            return "Comando no reconocido"
+            return f"Comando no reconocido: {command}"
